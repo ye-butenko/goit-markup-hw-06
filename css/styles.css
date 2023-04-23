@@ -440,6 +440,7 @@ body {
 
 .projects-link {
     display: block;
+
     transition: box-shadow var(--transition-primary);
 }
 
@@ -467,6 +468,7 @@ body {
     color: var(--color-cloud);
     background-color: var(--color-iris);
     transform: translateY(100%);
+
     transition: transform var(--transition-primary);
 }
 
@@ -498,6 +500,7 @@ body {
 .footer-container {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .footer .logo {
@@ -516,8 +519,7 @@ body {
 }
 
 .footer-social {
-    width: 208px;
-    margin-right: 80px;
+    margin-right: auto;
 }
 
 .footer-title-text {
@@ -536,17 +538,14 @@ body {
     background-color: var(--color-green);
 }
 
-.footer-subscribe {
-    width: 452px;
-}
-
 .footer-form {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
 .footer-input {
-    width: 100%;
+    max-width: 264px;
     height: 40px;
     padding-left: 16px;
 
@@ -607,7 +606,6 @@ body {
     transform: translate(-50%, -50%) scale(1);
 
     width: 408px;
-    height: 576px;
     background-color: var(--color-dairy);
     box-shadow:
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -683,6 +681,7 @@ body {
 .modal-form-field-desc {
     display: block;
     letter-spacing: 0.01em;
+    margin-bottom: 4px;
 }
 
 .modal-form-imput-wrapper {
@@ -786,6 +785,10 @@ body {
 
 .modal-form-check-input:checked+.modal-check-cust>.check-icon {
     opacity: 1;
+}
+
+.modal-policy-link {
+    color: var(--color-iris);
 }
 
 .modal-btn-submit {
